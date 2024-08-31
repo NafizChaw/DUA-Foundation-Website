@@ -1,0 +1,22 @@
+.donation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.donation-section select,
+.donation-section input {
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-donate {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
