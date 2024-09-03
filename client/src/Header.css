@@ -8,7 +8,11 @@
 }
 
 .logo {
-    height: 60px;
+    position: absolute; /* Positions the logo absolutely within the header */
+    top: 10px; /* Distance from the top of the header */
+    left: 85px; /* Distance from the left of the header */
+    width: 100px; /* Adjust size as needed */
+    height: auto;
 }
 
 .header-right a {

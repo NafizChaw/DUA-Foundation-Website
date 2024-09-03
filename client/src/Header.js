@@ -1,13 +1,16 @@
-import React from 'react';
-import './Header.css';
+// src/components/Header.js
 
-function Header() {
+import React from 'react';
+import logo from './images/Logo1.ico'; // Adjust the path based on your directory structure
+import './Header.css'; // Optional: if you want to add custom styles for the header
+
+const Header = () => {
     return (
-        <header className="header">
-            <div className="header-right">
-            </div>
-        </header>
+        <div className="header">
+            <img src={logo} alt="Logo" className="logo" />
+            {/* Add any additional elements like a title or slogan here */}
+        </div>
     );
-}
+};
 
 export default Header;

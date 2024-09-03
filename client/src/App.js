@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
-import DonationSection from './DonationSection';
+import Sidebar from "./Sidebar";
 import './App.css';
 
 function App() {
@@ -10,19 +10,18 @@ function App() {
     }, []);
 
     return (
-        <div className="App">
-            <Header />
-            <Navbar />
+            <div className="App">
+                {/* Title for the landing page */}
+                <div className="landing-page-title">
+                    <h1>Dua Foundation</h1>
+                    {/* You can add additional styling or text here */}
+                </div>
 
-            {/* Title for the landing page */}
-            <div className="landing-page-title">
-                <h1>Dua Foundation</h1>
-                {/* You can add additional styling or text here */}
+                <Header /> {/* Logo is displayed here */}
+                <Navbar />
+                <Sidebar />
             </div>
 
-            <DonationSection />
-            {/* Additional content sections go here */}
-        </div>
     );
 }
 
