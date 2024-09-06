@@ -1,0 +1,10 @@
+.landing-page-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.landing-page-title h1 {
+  font-size: 3rem; /* Adjust font size as needed */
+  text-align: center;
+  color: #2c3e50;  /* Choose your preferred color */
+}
