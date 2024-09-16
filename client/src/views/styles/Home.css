@@ -1,10 +1,25 @@
+/* styles/Home.css */
+
+/* Styling for the landing page title */
 .landing-page-title {
-  text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.landing-page-title h1 {
-  font-size: 3rem; /* Adjust font size as needed */
-  text-align: center;
-  color: #2c3e50;  /* Choose your preferred color */
+/* Adjust padding for the content section */
+.content {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color for contrast */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .landing-page-title {
+    margin-top: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
 }
