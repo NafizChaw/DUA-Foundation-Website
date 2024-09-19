@@ -1,5 +1,6 @@
 import './styles/Sidebar.css';
-import { useState } from 'react';
+import {useState} from 'react';
+
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const SideNav = () => {
                     <li><a href="/about">About</a></li>
                     <li><a href="/projects">Projects</a></li>
                     <li><a href="/ongoing-projects">Ongoing Projects</a></li>
-                    <li><a href="/donor-members">Donor and Lifetime Members</a></li>
+                    <li><a href="/donor-members">Donor and Lifetime Member</a></li>
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/video">Video</a></li>
                     <li><a href="/news">News</a></li>
