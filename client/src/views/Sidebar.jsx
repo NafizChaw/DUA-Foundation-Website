@@ -1,5 +1,6 @@
 import './styles/Sidebar.css';
 import { useState } from 'react';
+import {Link} from "react-router-dom";
 
 const SideNav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const SideNav = () => {
                 </button>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><Link to="/about">About</Link></li>
                     <li><a href="/projects">Projects</a></li>
                     <li><a href="/ongoing-projects">Ongoing Projects</a></li>
                     <li><a href="/donor-members">Donor and Lifetime Members</a></li>
