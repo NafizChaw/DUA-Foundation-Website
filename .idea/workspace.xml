@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e176343-a1f0-4580-8935-4e873299e780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/views/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/views/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/shared/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/shared/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/styles/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/styles/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/styles/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/styles/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/donate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +73,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nafiz\WebstormProjects\untitled3\client\src\views" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />

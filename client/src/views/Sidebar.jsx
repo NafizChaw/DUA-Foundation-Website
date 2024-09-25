@@ -1,37 +1,26 @@
 import './styles/Sidebar.css';
-import { useState } from 'react';
-import {Link} from "react-router-dom";
+import React from 'react';
 
-const SideNav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleNav = () => {
-        setIsOpen(!isOpen);
-    };
-
+const SideNav = ({ closeSidebar }) => {
     return (
+
         <div>
-            {/* Button to open/close the side navigation */}
-            <button className="toggle-btn" onClick={toggleNav} aria-label="Toggle Navigation Menu">
-                &#9776; {/* Unicode for the hamburger icon */}
-            </button>
 
             {/* Side Navigation Menu */}
-            <div className={`sidenav ${isOpen ? 'open' : ''}`}>
-                {/* Close Button */}
-                <button className="closebtn" onClick={toggleNav} aria-label="Close Navigation Menu">
-                    &times; {/* Unicode for the close icon */}
+            <div className="sidenav open">
+                <button className="closebtn" onClick={closeSidebar} aria-label="Close Navigation Menu">
+                    &times;
                 </button>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/ongoing-projects">Ongoing Projects</a></li>
-                    <li><a href="/donor-members">Donor and Lifetime Members</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/video">Video</a></li>
-                    <li><a href="/news">News</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="#home-section" onClick={closeSidebar}>Home</a></li>
+                    <li><a href="#about-section" onClick={closeSidebar}>About</a></li>
+                    <li><a href="#projects-section" onClick={closeSidebar}>Projects</a></li>
+                    <li><a href="#ongoing-projects-section" onClick={closeSidebar}>Ongoing Projects</a></li>
+                    <li><a href="#donor-members-section" onClick={closeSidebar}>Donor and Lifetime Members</a></li>
+                    <li><a href="#gallery-section" onClick={closeSidebar}>Gallery</a></li>
+                    <li><a href="#video-section" onClick={closeSidebar}>Video</a></li>
+                    <li><a href="#news-section" onClick={closeSidebar}>News</a></li>
+                    <li><a href="#contact-section" onClick={closeSidebar}>Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -1,85 +1,61 @@
-/* Sidebar.css */
+/* Sidebar-specific styles */
+.sidebar-container {
+    width: 0;
+    transition: width 0.3s;
+    background-color: #111;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
 
-/* Style the toggle button (Hamburger icon) */
+.sidebar-container.open {
+    width: 250px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidenav a:hover {
+    color: red;
+}
+
+/* Hide sidebar on desktop */
+@media (min-width: 768px) {
+    .sidebar-container {
+        display: none;
+    }
+}
+
+/* Toggle button for mobile sidebar */
 .toggle-btn {
     font-size: 30px;
     cursor: pointer;
     border: none;
     background: none;
     padding: 10px;
-    color: #111; /* Set a default color for the icon */
+    color: #111;
     position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 2; /* Ensure the toggle button is above the sidebar */
+    z-index: 2;
 }
 
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* Full-height */
-    width: 0; /* Initially hidden */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black background */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: width 0.5s ease; /* Smooth transition */
-    padding-top: 60px; /* Push content down to leave space for close button */
-}
-
-/* When the sidenav is opened */
-.sidenav.open {
-    width: 250px; /* Set width when open */
-}
-
-/* Style for the close button */
-.sidenav .closebtn {
+/* Close button in sidebar */
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     cursor: pointer;
-    border: none;
-    background: none;
     color: white;
-}
-
-/* Style sidenav links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: color 0.3s;
-}
-
-/* Hover effects on links */
-.sidenav a:hover {
-    color: red;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .sidenav {
-        width: 0; /* Keep it hidden initially on mobile */
-        transition: width 0.5s ease; /* Smooth transition for mobile */
-    }
-
-    .sidenav.open {
-        width: 200px; /* Slightly smaller width on mobile */
-    }
-
-    .sidenav a {
-        font-size: 20px; /* Smaller text size on mobile */
-    }
-
-    .toggle-btn {
-        font-size: 24px; /* Smaller hamburger icon on mobile */
-    }
-
-    .sidenav .closebtn {
-        font-size: 30px; /* Adjust close button size on mobile */
-    }
 }

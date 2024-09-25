@@ -1,68 +1,36 @@
 /* Ensure the header is responsive with flexbox */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
     background-color: #ffffff;
     border-bottom: 2px solid #ddd;
 }
 
-.logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    transition: filter 300ms;
-}
-
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-/* Flex container for the right side of the header */
-.header-right {
+/* Navigation Links */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: center;
 }
 
-.header-right a {
-    margin: 0 10px;
+.nav-list li {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-list li a {
     text-decoration: none;
     color: #333;
 }
 
-/* Buttons for account and donation */
-/* Button styles for the donate button */
-.btn-donate {
-    margin-left: 1000px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white !important; /* Ensure text color is white */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Ensure the text is bold for visibility */
+.nav-list li a:hover {
+    color: #007bff;
 }
 
-.btn-donate:hover {
-    background-color: #444; /* Slightly lighter on hover */
-    color: white !important; /* Ensure text stays white on hover */
-}
-
-
-
+/* Hide the header on mobile */
 @media (max-width: 768px) {
-    .logo {
-        width: 75px; /* Smaller size for mobile */
-    }
-
-    .header-right a {
-        font-size: 14px; /* Smaller text on mobile */
-    }
-
-    .btn-account, .btn-donate {
-        padding: 5px 8px; /* Smaller buttons on mobile */
+    .header {
+        display: none;
     }
 }
