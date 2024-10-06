@@ -11,7 +11,6 @@ function Header() {
                 {/* Navigation Links in the Center */}
                 <div className="col">
                     <ul className="nav-list d-flex justify-content-around">
-                        <li><a href="#home-section">Home</a></li>
                         <li><a href="#about-section">About</a></li>
                         <li><a href="#projects-section">Projects</a></li>
                         <li><a href="#ongoing-projects-section">Ongoing Projects</a></li>

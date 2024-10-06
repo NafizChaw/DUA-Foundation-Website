@@ -50,12 +50,6 @@ function Home() {
 
             {/* Main content */}
             <div className={`main-content ${isSidebarOpen ? 'blurred' : ''}`} onClick={closeSidebar}>
-                <section id="home-section" className="section home py-5" data-aos="fade-up">
-                    <div className="container">
-                        <h1>Home Section</h1>
-                        <p>Welcome to the Dua Foundation Home Section</p>
-                    </div>
-                </section>
 
                 <section id="about-section" className="section about py-5" data-aos="fade-left">
                     <div className="container">
