@@ -1,3 +1,38 @@
+/* =========================
+   SECTION-SPECIFIC COLORS
+   ========================= */
+.about {
+  background-color: #faf0e6; /* Light beige */
+}
+
+.projects {
+  background-color: #ffe4e1; /* Light pink (MistyRose) */
+}
+
+.ongoing-projects {
+  background-color: #ffe4b5; /* Moccasin */
+}
+
+.donor-members {
+  background-color: #f0fff0; /* Honeydew */
+}
+
+.gallery {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+.video {
+  background-color: #fff0f5; /* LavenderBlush */
+}
+
+.news {
+  background-color: #f5fffa; /* MintCream */
+}
+
+.contact {
+  background-color: #f5f5dc; /* Beige */
+}
+
 /* Shared header styles (visible on both desktop and mobile) */
 .shared-header {
   text-align: center;
@@ -41,13 +76,14 @@
   filter: blur(5px); /* Add blur effect when sidebar is open */
 }
 
-/* Section styling */
+/* Section base styling */
 .section {
   padding: 100px 20px;
   border-bottom: 1px solid #ddd;
   min-height: 100vh;
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
@@ -67,32 +103,34 @@ html {
 }
 
 /* Hide Sidebar Toggle Button on desktop */
-/*@media (min-width: 768px) {*/
-/*  .toggle-btn {*/
-/*    display: none;*/
-/*  }*/
-/*}*/
+/* (Uncomment if you want to hide the toggle button on large screens)
+@media (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+} */
 
-/* Sidebar-specific styles */
-/*.sidebar-container {*/
-/*  width: 0;*/
-/*  transition: width 0.3s;*/
-/*  background-color: #111;*/
-/*  height: 100%;*/
-/*  position: fixed;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  z-index: 1;*/
-/*  overflow-x: hidden;*/
-/*  padding-top: 60px;*/
-/*}*/
+/* Sidebar-specific styles
+.sidebar-container {
+  width: 0;
+  transition: width 0.3s;
+  background-color: #111;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+*/
 
 /* Show Sidebar when it's open */
 .sidebar-container.open {
   width: 250px;
 }
 
-/* Sidebar navigation link styling */
+/* Sidebar link styling */
 .sidenav a {
   padding: 10px 15px;
   text-decoration: none;
@@ -125,4 +163,58 @@ html {
   .header-container {
     display: none;
   }
+}
+
+/* =========================
+   FLIP CARD STYLING
+   ========================= */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px; /* 3D perspective */
+  margin: 0 auto;
+  cursor: pointer; /* Indicate clickable on hover */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Hover-based flip on desktop
+   If you prefer a purely click-based flip,
+   you'd need JavaScript toggling a class. */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+/* FRONT of the card (colorful gradient) */
+.flip-card-front {
+  background: linear-gradient(45deg, #ffafbd, #ffc3a0);
+  /* #ffafbd to #ffc3a0 is a pink-peach gradient */
+  color: #333;
+}
+
+/* BACK of the card (another gradient) */
+.flip-card-back {
+  background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+  /* #a1c4fd to #c2e9fb is a light blue gradient */
+  color: #333;
+  transform: rotateY(180deg);
 }
